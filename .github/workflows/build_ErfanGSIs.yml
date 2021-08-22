@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://netix.dl.sourceforge.net/project/ancientrom/beryllium/AncientOS-CIVILIZATION-v4.0.1-Final-beryllium-PRIMEVAL-20201117-2156-Vanilla.zip
+  ROM_URL: https://dl3.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2Mjc2MTQ0NjciLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjMwYTU3MDI4YWNkYTkwYTYwNTlhYjI4NTYxNjFmZDA2YTVmNmMzZjNiNjk5NjY3NjE0ZmNjYmI0NGUzNTM1MTViYTdmOTczZjA2YzQ0YTQzNjNmNmZkNmY5ZDMyYjcxZGNkODUyNWZkZTdjZDc3MGU5NDAyM2NlOTAwOWE1YTYyIiwidCI6MTYyOTYzMTI3Miwic3RmcCI6IjI4MDgzOGU1ODk4ZjVkOGIxZGI0YjNiZTY3ZGE1MDQ4Iiwic3RpcCI6IjE5NS4xNTUuMTcxLjM5In0.Aertbr-Z4IZUrPNreAKAxY0RsPDkHyk8ka_p3it__4w/Nusantara_LTS-10-lavender-28072021-OFFICIAL-1403.zip
   ROM_NAME: MIUI
   TZ: Asia/Kolkata
   MIR: wet
@@ -26,7 +26,8 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erkanergen7/ErfanGSIs-VelanGSIs.git  ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+cd ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
