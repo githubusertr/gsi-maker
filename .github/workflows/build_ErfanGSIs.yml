@@ -1,7 +1,8 @@
 name: Building GSI..
 
-on: 
-  workflow_dispatch:
+on:
+  watch:
+    types: [started]
 
 env:
   ROM_URL: https://udomain.dl.sourceforge.net/project/xyzuan/xd_lavender/xd_rev1.3.redwhite.OBT-lavender-20210817-0139.zip
