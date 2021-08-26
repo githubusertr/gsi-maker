@@ -2,10 +2,7 @@ name: Building GSI..
 
 on: 
   workflow_dispatch:
-defaults:
-  run:
-    shell: bash
-    
+
 env:
   ROM_URL: https://udomain.dl.sourceforge.net/project/xyzuan/xd_lavender/xd_rev1.3.redwhite.OBT-lavender-20210817-0139.zip
   ROM_NAME: Generic
