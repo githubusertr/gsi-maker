@@ -10,7 +10,7 @@ env:
   ROM_URL: https://udomain.dl.sourceforge.net/project/xyzuan/xd_lavender/xd_rev1.3.redwhite.OBT-lavender-20210817-0139.zip
   ROM_NAME: Generic
   TZ: Asia/Jakarta
-  MIR: wet
+  MIR: wib
   ZIP_NAME: xdroid1.3
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
+         run: git clone --recurse-submodules https://github.com/erkanergen7/ErfanGSIs-VelanGSIs ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
