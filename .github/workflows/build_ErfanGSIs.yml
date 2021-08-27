@@ -7,11 +7,11 @@ defaults:
     shell: bash
 
 env:
-  ROM_URL: https://udomain.dl.sourceforge.net/project/xyzuan/xd_lavender/xd_rev1.3.redwhite.OBT-lavender-20210817-0139.zip
-  ROM_NAME: Generic
+  ROM_URL: https://downloads.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/21.8.25/xiaomi.eu_multi_HMNote8_21.8.25_v12-11.zip?ts=gAAAAABhKKN-RQg_xMrMTi0RdjfNSlq3yB_lzwMLriENX99AYoSptZSKdM8V0kTVk1qeV-oF9TlAIT3U4KnLPbs2D9qv7cneOg%3D%3D&use_mirror=udomain&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fxiaomi-eu-multilang-miui-roms%2Ffiles%2Fxiaomi.eu%2FMIUI-WEEKLY-RELEASES%2F21.8.25%2F
+  ROM_NAME: MIUI
   TZ: Asia/Jakarta
   MIR: wet
-  ZIP_NAME: xdroid1.3
+  ZIP_NAME: xiaomi.eu_multi_HMNote8_21.8.25_v12
   CHAT_ID: ${{ secrets.CHAT_ID }}
   TOKEN: ${{ secrets.TOKEN }}
   USER: ${{ secrets.USER }}
