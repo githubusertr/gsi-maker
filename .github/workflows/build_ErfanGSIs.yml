@@ -42,7 +42,6 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: |
               bash $(pwd)/tg.sh
-              tg_post_msg "<b>Rom Compilation Started...</b>%0A<b>Date : </b><code>$DATE</code>%0A"
               sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: Zip Aonly and upload 
