@@ -12,6 +12,9 @@ env:
   TZ: Asia/Jakarta
   MIR: wet
   ZIP_NAME: xdroid1.3
+  BOT_MSG_URL: https://api.telegram.org/bot$TG_TOKEN/sendMessage
+  TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+  TG_TOKEN: ${{ secrets.TG_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,7 +40,10 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+         run: |
+              bash $(pwd)/tg.sh
+              tg_post_msg "<b>Rom Compilation Started...</b>%0A<b>Date : </b><code>$DATE</code>%0A"
+              sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: Zip Aonly and upload 
          run: |
@@ -53,5 +59,3 @@ jobs:
        - name: Print build info
          run: |
               cat ErfanGSIs/output/*-Aonly-*.txt
-         
-            
