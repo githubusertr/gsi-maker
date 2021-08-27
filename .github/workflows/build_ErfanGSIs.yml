@@ -12,9 +12,11 @@ env:
   TZ: Asia/Jakarta
   MIR: wet
   ZIP_NAME: xdroid1.3
-  BOT_MSG_URL: https://api.telegram.org/bot$TG_TOKEN/sendMessage
-  TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-  TG_TOKEN: ${{ secrets.TG_TOKEN }}
+  CHAT_ID: ${{ secrets.CHAT_ID }}
+  TOKEN: ${{ secrets.TOKEN }}
+  USER: ${{ secrets.USER }}
+  SFDIR: ${{ secrets.SFDIR }}
+  PASSWORD: ${{ secrets.PASSWORD }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,7 +33,7 @@ jobs:
 
        
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/erkanergen7/ErfanGSIs-VelanGSIs ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/AnGgIt88/ErfanGSIs-VelanGSIs ErfanGSIs
        
        - name: Setting up ErfanGSI requirements
          run: |
@@ -41,7 +43,6 @@ jobs:
        
        - name: Download Stock Rom & Generate GSI
          run: |
-              bash $(pwd)/tg.sh
               sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
        
        - name: Zip Aonly and upload 
