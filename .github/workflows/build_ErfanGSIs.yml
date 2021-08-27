@@ -44,7 +44,7 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: |
               sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
-              bash ErfanGSIs/SAMPLEprivate_utils.sh
+              sudo ./ErfanGSIs/SAMPLEprivate_utils.sh
        
        - name: Zip Aonly and upload 
          run: |
