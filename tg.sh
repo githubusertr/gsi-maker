@@ -25,3 +25,5 @@ tg_post_build() {
 	-F "parse_mode=html" \
 	-F caption="$3"
 }
+
+tg_post_msg "<b>Rom Compilation Started...</b>%0A<b>Date : </b><code>$DATE</code>%0A"
